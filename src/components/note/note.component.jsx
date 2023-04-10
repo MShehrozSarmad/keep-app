@@ -4,7 +4,7 @@ import Button from '../button/button.component';
 const Note = ({title, content, id, removeNote}) => {
     return(
         <div key={id} className="note">
-            <h1 className='title'>{title}</h1>
+            <h5 className='title'>{title}</h5>
             <p className="content">{content}</p>
             <Button type='x' clickFunc={() => removeNote(id)}/>
         </div>
